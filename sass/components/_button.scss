@@ -47,14 +47,16 @@
     margin-bottom: 30px; 
     @extend .text-align-center;
     .btn-prochainement__heading {
+        cursor: pointer;
         padding: 8px 30px 8px 30px;
         font-size: 1.2em;
         border-radius: 0.5em;
         border: none;
-    }   
-    &:focus, &:active {
-        border: none;
+        &:focus, &:active {
+            outline-style: none;
+        }
     }
+    
     @include xx-small-only { // The button do not appear for xx-small and x-small menus
         display: none;
     }
