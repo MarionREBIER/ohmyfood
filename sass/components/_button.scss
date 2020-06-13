@@ -52,8 +52,9 @@
         border-radius: 0.5em;
         border: none;
     }   
-    .btn-prochainement:focus {
+    &:focus {
         outline: none;
+        border: none;
     }
     @include xx-small-only { // The button do not appear for xx-small and x-small menus
         display: none;
