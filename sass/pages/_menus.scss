@@ -1,0 +1,198 @@
+// This file contains styles that are specific to the one pages MENUS general layout
+
+// Menu title between header and menu
+.menu__title {
+    @extend .text-align-center;
+    @include xx-small-only { 
+        h2 {
+            display: none;
+        }
+    }
+    @include small-only {
+        h2 {
+            display: block;
+            margin-top: 40px;
+        }
+    }
+}
+
+// One page menu general layout : text-align, margin & padding
+.menu {
+    @extend .box-shadow;
+    @include xx-small-only {
+        margin: 40px 25px 40px 25px;
+        padding: 10px 20px 40px 20px;
+    }
+    @include x-small-only {
+        padding: 10px 30px 40px 30px;
+    }
+    @include small-only {
+        margin: 20px 55px 50px 50px;
+        padding: 20px 20px 60px 20px;
+    }
+    h2 {
+        @extend .text-align-center;
+        @include xx-small-only {
+        margin: 40px auto 50px auto;
+        }
+        @include small-only {
+            margin: 60px auto 60px auto;
+        }
+    }
+    h3 {
+        @extend .text-align-center;
+        @include xx-small-only {
+            margin: 0 auto 10px auto;
+        }
+        @include small-only {
+            margin: auto; // To be at the same height than ornaments
+        }
+    }
+    .part__1, .part__2, .part__3 {
+        @include xx-small-only {
+            margin-bottom: 20px;
+        }
+        @include small-only {
+            margin-bottom: 40px;
+        }
+        .dish {
+            p {
+                margin-bottom: 8px;
+                @include xx-small-only {
+                    text-align: center;
+                }
+                @include small-only {
+                    text-align: left;
+                }
+            }
+        }
+        .price {
+            p {
+                @include xx-small-only {
+                    width: 45px;
+                    height: 25px;
+                    text-align: center;
+                    margin: auto auto 30px auto;
+                    padding: 11px 0 9px 0;
+                    border-radius: 50%;
+                }
+                @include small-only {
+                    text-align: right;
+                    width: auto;
+                    height: auto;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+// Menu 1 La note enchantée
+.menu-1 {
+    @include xx-small-only {
+        padding-top: 30px;
+    }
+    @include small-only {
+        padding: 40px 50px 60px 50px;
+    }
+    h2 {
+        margin: 2px auto 50px auto;
+        @include x-small-only {
+            font-size: 2em;
+        }
+    }
+    .part__123__title {
+        @include small-only {
+            margin-bottom: 10px;
+        }
+    }
+    .dish {
+        p {
+            @include small-only {
+                padding-left: 10px;
+            }
+        }
+    }
+    .price {
+        @include xx-small-only {
+            font-weight: bold;
+        }
+        @include small-only {
+            padding-right: 10px;
+            margin: auto 0 8px auto;
+        }
+    }
+}
+
+#signature {
+    margin-top: 40px;
+    h4 {
+        margin: auto auto auto 0;
+        @include xx-small-only {
+            font-size: 1.3em;
+        }
+        @include x-small-only {
+            font-size: 1.5em;
+        }
+    }
+}
+
+// Menu 2, 3 & 4 : h3 title font-weight, paddin & margin
+.menu-2, .menu-3, .menu-4 {
+    .part__123__title {
+        @include small-only {
+            margin-bottom: 20px;
+        }
+    }
+    h3, .price > p {
+        @include xx-small-only {
+            font-weight: bold;
+        }
+        @include small-only {
+            font-weight: normal;
+            font-size: 1em;
+        }
+    }
+    .dish {
+        p {
+            @include small-only {
+                padding-left: 60px;
+                font-size: 0.9em;
+            }
+        }
+    }
+    .price {
+        @include small-only {
+            padding-right: 60px;
+            font-size: 0.9em;
+            margin: auto 0 8px auto;
+        }
+        @include xx-small-only {
+            font-weight: bold;
+        }
+    }
+}
+
+// Menus 3 & 4 : h2 title
+.menu-3, .menu-4 {
+    h2 {
+        @include xx-small-only {
+            font-size: 1.8em;
+        }
+        @include small-only {
+            font-size: 3.6em;
+            font-weight: lighter;
+        }
+    }
+    padding-bottom: 20px;
+}
+
+// Menu 2 Le chic à la française
+.menu-2 {
+    h3 {
+        @include small-only {
+            font-weight: bold;
+        }
+    }
+}

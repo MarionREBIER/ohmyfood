@@ -1,0 +1,25 @@
+// This file contains styles that are specific to the MENTIONS page
+
+.article-mentions {
+    span {
+        font-weight: bold;
+    }
+    h2 {
+        @extend .text-align-center;
+        margin: auto auto 50px auto;
+    }
+    h3, h4 {
+        margin-top: 35px;
+    }
+    h4 {
+        padding-left: 20px;
+    }
+    @include xx-small-only {
+        margin: 40px 25px 40px 25px;
+        font-size: 0.8em;
+    }
+    @include small-only {
+        margin: 50px 35px 50px 35px;
+        font-size: 1em;
+    }
+}

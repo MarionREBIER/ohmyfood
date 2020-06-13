@@ -1,0 +1,11 @@
+// This file contains all styles related to the HEADER of the site
+
+header {
+    display: grid;
+    height: 70px;
+    @extend .text-align-center;
+    h1 {
+        margin: auto;
+        font-size: 2em;
+    }
+}
