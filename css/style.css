@@ -9,7 +9,6 @@
 .btn-menus {
   cursor: pointer;
   border: none;
-  outline: none;
   display: grid;
   align-content: center;
 }
@@ -41,13 +40,14 @@
   margin-bottom: 30px;
 }
 .btn-prochainement .btn-prochainement__heading {
+  cursor: pointer;
   padding: 8px 30px 8px 30px;
   font-size: 1.2em;
   border-radius: 0.5em;
   border: none;
 }
-.btn-prochainement .btn-prochainement:focus {
-  outline: none;
+.btn-prochainement .btn-prochainement__heading:focus, .btn-prochainement .btn-prochainement__heading:active {
+  outline-style: none;
 }
 @media screen and (min-width: 320px) {
   .btn-prochainement {
@@ -487,13 +487,15 @@ header h1 {
   }
 }
 
-.btn-menus {
-  overflow: hidden;
+.btn-menus--hover {
+  text-align: center;
   position: relative;
-  transition-duration: 0.8s;
+  transform: scale(1);
+  transition: transform 0.8s;
 }
-.btn-menus:hover {
-  transform: scale(1.15);
+.btn-menus--hover:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
 }
 
 .part__123__title {
@@ -534,11 +536,9 @@ header h1 {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-
 .loading span:nth-child(2) {
   animation-delay: 0.4s;
 }
-
 .loading span:nth-child(3) {
   animation-delay: 0.8s;
 }
@@ -609,6 +609,7 @@ body {
 
 a {
   text-decoration: none;
+  outline: 0;
 }
 
 header {

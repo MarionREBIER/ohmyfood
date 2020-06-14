@@ -1,13 +1,14 @@
 // This file contains all styles related to the keyframes for ANIMATIONS
 
 // Zoom effect on menus preview (home page)
-.btn-menus {
-    overflow: hidden;
+.btn-menus--hover {
+    text-align: center;
+    // overflow: hidden;
     position: relative;
     transform: scale(1);
     transition: transform 0.8s;
     &:hover {
-        transform: scale(1.15);
+        transform: scale(1.10);
         opacity: 0.7;
     }
 }
